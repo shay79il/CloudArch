@@ -1,5 +1,7 @@
 # [Architecture Assignment](https://app.diagrams.net/#Hshay79il%2FCloudArch%2Fmain%2FPizza_order.drawio)
 
+# ![Architecture](Arch.jpeg)
+
 ## The Storyline - Pizza Order Website
 
 We have a company that has a website for ordering Pizza.
@@ -53,5 +55,8 @@ kind create cluster --config kind-config.yaml
 ```
 
 ```docker
+docker build -t shay79il/pizza:1.0.0 ./app
+docker push shay79il/pizza:1.0.0
+
 docker run -p 5000:5000 -d --name pizzaOrder shay79il/pizza
 ```

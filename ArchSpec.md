@@ -27,11 +27,11 @@
   - ALB
   - Bastion server to login to the EKS Cluster
   - NAT gateway in order to have route from the private OUT to the internet
-  - K8S worker node for web servers pods for incoming traffic which go through AWS WAF(firewall)
 - In the `private` subnet we will have:
   - Aurora RDS
   - EKS Control plane and ETCD
   - EKS worker node which contains the app PODs
+  - K8S worker node for web servers pods for incoming traffic which go through AWS WAF(firewall)
 
 ## Authentication
 
